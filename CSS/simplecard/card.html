@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+            font-family: sans-serif;
+        }
+        .card{
+            padding: 25px;
+            width:370px;
+            border-radius: 24px;
+            background-color: #fff;
+            box-shadow: 0px 0px 5px 1px rgb(155, 155, 155);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            z-index: 0;
+        }
+        .card::before{
+            content: '';
+            height: 36%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #4070f4;
+            z-index: -2;
+            border-radius: 24px 24px 0 0;
+        }
+        .image{
+            padding: 3px;
+            width: 150px;
+            height: 150px;
+            background-color: #4070f4;
+            border-radius: 50%;
+        }
+        img{
+            width: 100%;
+            border-radius: 50%;
+            border: 4px solid white;
+        }
+        .desc{
+            margin: 10px;
+        }
+        .desc h1{
+            margin: 5px;
+            font: 700 1.5rem sans-serif;
+        }
+        .desc h2{
+            font: 600 1rem sans-serif;
+        }
+        .sociallinks{
+            display: flex;
+            align-items: center;
+            margin: 10px;
+        }
+        .sociallinks div {
+            margin: 0 8px;
+            height: 32px;
+            width: 32px;
+            align-content: center;
+            border-radius: 50%;
+            color: white;
+        }
+        .sociallinks .facebook{
+            background-color: #4d7ee0;
+        }
+        .sociallinks .twitter{
+            background-color: #1da1f2;
+        }
+        .sociallinks .insta{
+            background-color: #e1306c;
+        }
+        .sociallinks .youtube{
+            background-color: #ff0000;
+        }
+        .buttons{
+            margin: 10px ;
+            display: flex;
+            color: white;
+        }
+        .buttons div{
+            margin: 0px 10px ;
+            padding: 10px 28px;
+            background-color: #4070f4;
+            border-radius: 100px;
+        }
+        .engagement{
+            display: flex;
+            align-items: center;
+        }
+        .engagement div{
+            padding: 0px 20px;
+            border-right: 1px solid grey;
+        }
+        .engagement div:nth-child(3){
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="imagebc">
+            <div class="image">
+                <img src="yorichipfp.jpg" alt="pfp">
+            </div>
+        </div>
+        <div class="desc">
+            <h1>CodingLab</h1>
+            <h2>YouTuber & Blogger</h2>
+        </div>
+        <div class="sociallinks">
+            <div class="facebook"><i class="fa-brands fa-facebook-f"></i></div>
+            <div class="twitter"><i class="fa-brands fa-twitter"></i></div>
+            <div class="insta"><i class="fa-brands fa-instagram"></i></div>
+            <div class="youtube"><i class="fa-brands fa-youtube"></i></div>
+        </div>
+        <div class="buttons">
+            <div class="Subscribe">Subscribe</div>
+            <div class="message">Message</div>
+        </div>
+        <div class="engagement">
+            <div class="like"> <i class="fa-regular fa-heart"></i> 60.4k</div>
+            <div class="comments"><i class="fa-regular fa-comment"></i>20k</div>
+            <div class="shares"><i class="fa-regular fa-share"></i>12.4k</div>
+        </div>
+    </div>
+</body>
+</html>
