@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LEETMETRIC APP</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <section class="container">
+        <h1 class="heading">LeetMetric App</h1>
+
+
+        <div class="user-container">
+            <p>Enter Your Username below:- </p>
+            <div class="user-input-container">
+                <input type="text" placeholder="Enter Your Username Here" id="user-input">
+                <button class="input-clear-btn">X</button>
+                <button id="search-btn">Search</button>
+            </div>
+        </div>
+
+        <div class="stats-container">
+
+            <div class="progress">
+                <div class="progress-item">
+                <div class="easy-progress circle">
+                    <p>Easy</p>
+                        <span id="easy-label"></span>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="medium-progress circle">
+                        <p>Medium</p>
+                        <span id="medium-label"></span>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="hard-progress circle">
+                        <p>Hard</p>
+                        <span id="hard-label"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <!-- Directly populate card here from the JS code  -->
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

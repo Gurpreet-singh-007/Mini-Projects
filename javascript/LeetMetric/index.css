@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+body{
+    background-color: #51403D;
+    color: #B79D78;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #30333a;
+    border-radius: 10px;
+    padding: 20px;
+    width: clamp(500px , 30% , 30%);
+}
+h1{
+    font-size: 2.5rem;
+}
+.user-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: start;
+    position: relative;
+}
+.user-input-containere{
+    display: flex;
+    justify-content: space-between;
+}
+#user-input{
+    width: clamp(80% , 75% , 75% );
+    padding: 0.4rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+#user-input:hover ,#user-input:focus{
+    border: none;
+    outline: none;
+}
+.input-clear-btn{
+    padding: 2px;
+    font-weight: bolder;
+    position: absolute;
+    top: 33px;
+    right: 100px;
+    background-color: white;
+    border: none;
+}
+#search-btn{
+    padding: 0.4rem;
+    border-radius: 5px;
+    background-color: #7e6560;
+    color: #25282e;
+    border: none;
+    outline: none;
+}
+#search-btn:hover{
+    border: none;
+    outline: none;
+}
+/* .stats-container{
+    display: none;
+} */
+
+.progress{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.circle{
+    --progress-degree : 0deg ;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 5px solid #7e6560;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #B79D78;
+    font-weight: 700;
+    background:  conic-gradient(#7e6560 var(--progress-degree) , #30333A 0%);
+    flex-direction: column;
+}
+#easy-label , #medium-label , #hard-label{
+    font-size: .8rem;
+    color: #000000;
+}
+.circle p{
+    color: #000000;
+}
